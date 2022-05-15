@@ -21,7 +21,7 @@ function generatePassword() {
     // logs the numerical length the user selects
   } else if (characterLength < 8 || characterLength > 128) {
     characterLength = parseInt(prompt('Number must be a numerical value between 8 and 128'));
-  } 
+  }    
 
   // asks and logs boolean for numbers 
   var numbersSelect = confirm('Would you like numbers in your password?');
@@ -69,3 +69,4 @@ function writePassword() {
 
 // event listener for button click
 generateBtn.addEventListener("click", writePassword);
+// 
